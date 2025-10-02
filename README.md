@@ -50,6 +50,8 @@ RETURN dp, r, connected
 MATCH path=(dp:DataProduct {dataproduct\_id: "ba3448fd-9328-4503-9e16-3340a4e65167"})-\[\*1..2]-(related)
 RETURN path
 
+--------------------------------------------------------------------------------------------------------------------------------------
+
 <img width="1000" height="542" alt="image" src="https://github.com/user-attachments/assets/0d9a7107-7c6c-4b7f-b474-953c1cb028e2" />
 <img width="1000" height="576" alt="image" src="https://github.com/user-attachments/assets/1c697675-30cd-4308-b0fd-156c2f21dcbd" />
 <img width="992" height="541" alt="image" src="https://github.com/user-attachments/assets/3c7002b8-0603-464a-a78e-508d5b62a1ad" />
