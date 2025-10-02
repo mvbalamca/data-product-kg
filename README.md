@@ -45,7 +45,26 @@ MATCH (dp:DataProduct)
 OPTIONAL MATCH (dp)-\[r]-(connected)
 RETURN dp, r, connected
 
+
 # 3: particular dataproduct with 2 levels
 MATCH path=(dp:DataProduct {dataproduct\_id: "ba3448fd-9328-4503-9e16-3340a4e65167"})-\[\*1..2]-(related)
 RETURN path
+
+<img width="1000" height="542" alt="image" src="https://github.com/user-attachments/assets/0d9a7107-7c6c-4b7f-b474-953c1cb028e2" />
+<img width="1000" height="576" alt="image" src="https://github.com/user-attachments/assets/1c697675-30cd-4308-b0fd-156c2f21dcbd" />
+<img width="992" height="541" alt="image" src="https://github.com/user-attachments/assets/3c7002b8-0603-464a-a78e-508d5b62a1ad" />
+<img width="1000" height="576" alt="image" src="https://github.com/user-attachments/assets/291c9373-e815-4d32-b5f6-4cb198f79669" />
+<img width="1000" height="576" alt="image" src="https://github.com/user-attachments/assets/438b70f9-5e3b-4b95-84f7-1c0afafc53ce" />
+<img width="1000" height="576" alt="image" src="https://github.com/user-attachments/assets/7d30bf93-b77e-4e6f-bfe7-a85332071833" />
+<img width="1000" height="576" alt="image" src="https://github.com/user-attachments/assets/825c341f-f7d5-460e-b0ad-d9b2575c9188" />
+<img width="992" height="541" alt="image" src="https://github.com/user-attachments/assets/7e2b02a9-27b4-4912-a6f6-6135c3358eb6" />
+<img width="1000" height="594" alt="image" src="https://github.com/user-attachments/assets/1d3d1453-d60c-46e4-bdde-365a46fb23d3" />
+
+
+
+
+
+
+
+
 
