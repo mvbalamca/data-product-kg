@@ -17,7 +17,7 @@ class AskRequest(BaseModel):
     question: str
 
 # Initialize LLM, retriever, and RAG pipeline at startup
-my_LLMClient = LLMClient(api_key="ODc2ODQyNTctY2ViYi00NjlhLTgyNzktMTRmNzE3MzlkNTNi")
+my_LLMClient = LLMClient(api_key="<< LLM API key >>")
 nest_asyncio.apply()
 asyncio.run(LLMClient._get_session(my_LLMClient))
 driver = None
@@ -31,7 +31,7 @@ def get_rag():
     from neo4j import GraphDatabase
     driver = GraphDatabase.driver(
         "bolt://localhost:7687",
-        auth=("neo4j", "password")
+        auth=("<<user-name>>", "<<password>>")
     )
     retriever = Text2CypherRetriever(
         driver=driver,
