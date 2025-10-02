@@ -13,7 +13,7 @@ logger = logging.getLogger(__name__)
 class Tool(BaseTool):
     """LLM tool for processing prompts using XsAI"""
     
-    api_key: str = Field(default_factory=lambda: os.getenv("DSX_API_KEY", ""))
+    api_key: str = Field(default_factory=lambda: os.getenv("API_KEY", ""))
     base_url: str = Field(default_factory=lambda: os.getenv("LLM_BASE_URL", ""))
     model: str = Field(default_factory=lambda: os.getenv("LLM_MODEL", "llama3"))
     
@@ -52,7 +52,7 @@ class Tool(BaseTool):
         if not self.base_url:
             raise ValueError("LLM_BASE_URL environment variable is not set")
         if not self.api_key:
-            raise ValueError("DSX_API_KEY environment variable is not set")
+            raise ValueError("API_KEY environment variable is not set")
             
         prompt = params.get("prompt")
         if not prompt:
