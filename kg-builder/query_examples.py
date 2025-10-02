@@ -10,7 +10,7 @@ def execute_queries():
     """Execute various Cypher queries and display results"""
     
     # Initialize connection
-    kgm = DataProductRegistry("bolt://localhost:7687", "neo4j", "password")
+    kgm = DataProductRegistry("bolt://localhost:7687", "<<user-name>>", "<<password>>")
     
     print("🔍 Knowledge Graph Query Examples")
     print("=" * 50)
