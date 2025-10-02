@@ -1,8 +1,8 @@
 import streamlit as st
 import requests
 
-st.set_page_config(page_title="Neo4j KG Assistant 💡", layout="centered")
-st.title("🧠 Knowledge Graph Assistant")
+st.set_page_config(page_title="Data Product KG Assistant 💡", layout="centered")
+st.title("🧠 Data Product - Knowledge Graph Assistant")
 st.markdown("Ask questions about your data products using natural language.")
 
 question = st.text_input("💬 Ask a question:")
