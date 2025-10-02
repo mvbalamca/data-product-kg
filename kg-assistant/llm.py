@@ -13,7 +13,7 @@ logger = logging.getLogger(__name__)
 class Tool(BaseTool):
     """LLM tool for processing prompts using XsAI"""
     
-    api_key: str = Field(default_factory=lambda: os.getenv("API_KEY", ""))
+    api_key: str = Field(default_factory=lambda: os.getenv("LLM_API_KEY", ""))
     base_url: str = Field(default_factory=lambda: os.getenv("LLM_BASE_URL", ""))
     model: str = Field(default_factory=lambda: os.getenv("LLM_MODEL", "llama3"))
     
